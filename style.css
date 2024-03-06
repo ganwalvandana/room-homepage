@@ -1,5 +1,5 @@
 #headerImage{
-    background-image: url(images/desktop-image-hero-0.jpg);
+    /* background-image: url(images/desktop-image-hero-0.jpg); */
     height: 650px;
     background-size: cover;
 }
@@ -47,4 +47,8 @@ i{
     bottom: 0;
     width: 120%;
     position: absolute;
+}
+
+#nextDiv:hover{
+    cursor: pointer;
 }

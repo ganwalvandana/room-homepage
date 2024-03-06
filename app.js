@@ -2,8 +2,7 @@ const mainImage = document.getElementById("headerImage");
 const heading = document.getElementById("heading");
 const para = document.getElementById("para");
 
-const back = document.getElementById("back");
-const next = document.getElementById("next");
+
 
 
 const pages = [{
@@ -21,17 +20,16 @@ const pages = [{
 }]
 
 let mainPage = 0;
-const changePage = (num) => {
-    mainPage += num ;
-    if(mainPage < 3 && mainPage >= 0) {
-        mainImage.style.backgroundImage = `url("images/desktop-image-hero-${mainPage}.jpg")`;
-        heading.innerText = pages[mainPage].heading;
-        para.innerText = pages[mainPage].para;
 
-    }
-    
-
+const changePage = (delta) => {
+    mainPage += delta;
+    const nPages = pages.length;
+    mainPage = (mainPage % nPages + nPages) % nPages;
+    mainImage.style.backgroundImage = `url("images/desktop-image-hero-${mainPage}.jpg")`;
+    heading.innerText = pages[mainPage].heading;
+    para.innerText = pages[mainPage].para;
 }
 
+changePage(0);
 
 
