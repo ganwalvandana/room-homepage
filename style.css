@@ -1,0 +1,50 @@
+#headerImage{
+    background-image: url(images/desktop-image-hero-1.jpg);
+    height: 650px;
+    background-size: cover;
+}
+
+#headerInfo{
+    height: 650px;
+    position: relative;
+}
+
+#darkFurniture{
+    background-image: url(images/image-about-dark.jpg);
+    height: 320px;
+    background-size: cover;
+}
+
+#lightFurniture{
+    background-image: url(images/image-about-light.jpg);
+    height: 320px;
+    background-size: cover;
+}
+p{
+    line-height: 30px;
+}
+
+#heading{
+    font-size: 3.5rem;
+    padding: 40px 0;
+}
+
+h4{
+    letter-spacing: 7px;
+}
+
+#shopNow{
+    letter-spacing: 15px;
+}
+
+i{
+    font-size: 2rem;
+    padding: auto;
+}
+
+#nextDiv{
+    left: 10;
+    bottom: 0;
+    width: 120%;
+    position: absolute;
+}
